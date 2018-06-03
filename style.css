@@ -1,22 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
 * {	
 	text-align: center;
 	vertical-align: middle;
     overflow-x: hidden;
 }
 
-html,body {
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
+body {
+    color: white;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right,#D35400, #DC7633, #D35400);
 }
 
 
 button {
     -webkit-transition-duration: 0.1s; /* Safari */
         transition-duration: .3s;
-        background-color: #F4595B;
+        background-color: #2ECC71;
         border-radius: 10px;
-        border-bottom: 4px solid #C24648;
         color: white;
         padding: 15px 32px;
         text-decoration: none;
@@ -26,4 +30,45 @@ button {
         letter-spacing: 2px;
   }
 
-  
+  button:focus {
+    outline:0;
+}
+
+  .wrapper {
+   
+    
+
+
+  }
+
+  #main {
+    animation-duration: .4s;
+    animation-name: slideup;
+    font-family: 'Bowlby One SC', cursive;
+    letter-spacing: 1px;
+    height: 85vh;
+    width: 145vh;
+    background: #1C2833;
+    box-shadow: 0px 13px 40px -15px rgba(0,0,0,0.80);
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+@keyframes slideup {
+    from {
+        margin-top: 200%;
+        width: 0%;
+        opacity: 0;
+    }
+    to {
+        margin-bottom: 0%;
+        width: 80%;
+        opacity: 1;
+    }
+}
+
+#game {
+    margin-top: 100px;
+}
